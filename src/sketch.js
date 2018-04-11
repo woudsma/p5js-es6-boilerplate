@@ -36,4 +36,8 @@ export default (p) => {
     if (h < 0 || h > max) hspeed = hspeed * -1
   }
 
+  p.windowResized = () => {
+    p.resizeCanvas(window.innerWidth, window.innerHeight);
+  }
+
 }

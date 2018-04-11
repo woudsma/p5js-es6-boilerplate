@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 // Import an installed module from npm
 import p5 from 'p5'
 // Import a javascript file from the project folder
