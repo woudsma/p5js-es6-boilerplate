@@ -1,0 +1,26 @@
+{
+  "name": "p5js-npm-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "p5": "^0.6.0",
+    "react-scripts": "^2.0.0-next"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  }
+}
