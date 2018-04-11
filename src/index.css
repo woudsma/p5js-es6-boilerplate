@@ -18,7 +18,5 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  /* mix-blend-mode: overlay; */
   mix-blend-mode: difference;
-  /* mix-blend-mode: overlay; */
 }
