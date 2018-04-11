@@ -3,15 +3,15 @@ export default (p) => {
   var max = 500
   var w = 0
   var h = max
-  var wspeed = 2
-  var hspeed = 2
+  var wspeed = 1.66
+  var hspeed = 1.33
   var r = 0
 
   // Use Processing functions with p5.js
   p.setup = () => {
     // Creating a canvas using the entire screen of the webpage
     p.createCanvas(window.innerWidth, window.innerHeight)
-    p.strokeWeight(7.5)
+    p.strokeWeight(5)
     p.ellipseMode(p.CENTER)
 
     console.log('p5.js setup function executed')
@@ -19,17 +19,17 @@ export default (p) => {
 
   p.draw = () => {
     // Clear the frame
-    p.background(255, 100)
+    p.background(255, 10)
 
     // Draw an ellipse
     p.translate(p.width / 2, p.height / 2)
     p.rotate(r)
-    p.fill(0, 5)
+    p.fill(0, 1)
     p.stroke(5)
     p.ellipse(0, 0, w, h)
 
     // Update rotation and increments
-    r = r + 0.01
+    r = r + 0.015
     w = w + wspeed
     h = h + hspeed
     if (w < 0 || w > max) wspeed = wspeed * -1
