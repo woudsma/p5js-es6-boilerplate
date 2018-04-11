@@ -1,25 +1,39 @@
 // Exporting a function
 export default (p) => {
+  var max = 500
+  var w = 0
+  var h = max
+  var wspeed = 2
+  var hspeed = 2
+  var r = 0
 
   // Use Processing functions with p5.js
   p.setup = () => {
     // Creating a canvas using the entire screen of the webpage
     p.createCanvas(window.innerWidth, window.innerHeight)
-    p.noStroke()
-    p.rectMode(p.CENTER)
+    p.strokeWeight(7.5)
+    p.ellipseMode(p.CENTER)
 
     console.log('p5.js setup function executed')
   }
 
   p.draw = () => {
     // Clear the frame
-    p.background(255)
+    p.background(255, 100)
 
-    // Draw a rectangle
-    var w = p.random(100, 400)
-    var h = p.random(100, 400)
-    p.fill(0)
-    p.ellipse(p.width / 2, p.height / 2, w, h)
+    // Draw an ellipse
+    p.translate(p.width / 2, p.height / 2)
+    p.rotate(r)
+    p.fill(0, 5)
+    p.stroke(5)
+    p.ellipse(0, 0, w, h)
+
+    // Update rotation and increments
+    r = r + 0.01
+    w = w + wspeed
+    h = h + hspeed
+    if (w < 0 || w > max) wspeed = wspeed * -1
+    if (h < 0 || h > max) hspeed = hspeed * -1
   }
 
 }
