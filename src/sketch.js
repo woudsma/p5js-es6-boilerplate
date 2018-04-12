@@ -1,11 +1,11 @@
 // Exporting a function
 export default (p) => {
-  var max = 500
-  var w = 0
-  var h = max
-  var wspeed = 1.66
-  var hspeed = 1.33
-  var r = 0
+  let max = 500
+  let w = 0
+  let h = max
+  let wspeed = 1.66
+  let hspeed = 1.33
+  let r = 0
 
   // Use Processing functions with p5.js
   p.setup = () => {
@@ -32,8 +32,8 @@ export default (p) => {
     r = r + 0.015
     w = w + wspeed
     h = h + hspeed
-    if (w < 0 || w > max) wspeed = wspeed * -1
-    if (h < 0 || h > max) hspeed = hspeed * -1
+    if (w < 0 || w > max) wspeed *= -1
+    if (h < 0 || h > max) hspeed *= -1
   }
 
   p.windowResized = () => {
