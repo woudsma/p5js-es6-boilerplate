@@ -1,21 +1,49 @@
 # p5.js + ES6 + npm boilerplate
-This is a boilerplate (project template) aimed at beginners, containing the basic files and tools for developing with [p5.js](https://p5js.org/) + [ES6](https://codeburst.io/es6-tutorial-for-beginners-5f3c4e7960be) + [npm](https://www.npmjs.com/).
+This is a boilerplate (project template) aimed at beginners, containing the basic files and tools for developing with [p5.js](https://p5js.org/) + [ES6](https://codeburst.io/es6-tutorial-for-beginners-5f3c4e7960be) + [npm](https://www.npmjs.com/).  
+
+[DEMO](https://p5js.omnio.studio)  
 ## Installation
 ##### Requirements
-Download and install [Node.js](https://nodejs.org/en/).  
+First: Download and install [Node.js](https://nodejs.org/en/).  
+Second: Open your terminal and navigate to the the desired local directory where you want to store your project - for example:
 ```shell
-git clone <repository> <project-name>
-cd <project-name>
+cd /Users/woudsma/KABK/coding
+# Or
+cd ~/KABK/coding
+# ~/ is your home directory, in my case /Users/woudsma
+```
+Show the current directory path: `pwd`  
+List the files in the current directory: `ls`  
+Quick tutorial: [25 Terminal Command For Beginners](https://www.youtube.com/watch?v=oStNbXzv7mE)
+
+Then:  
+Clone (a) repository from GitHub/Bitbucket/.. to the local directory, go into the directory and install the project dependencies (specified in `package.json`) using npm - for example:  
+```shell
+# git clone <repository> <project-name>
+# cd <project-name>
+# npm install
+
+git clone https://github.com/woudsma/p5js-es6-boilerplate my-project
+cd my-project
 npm install
 ```
 ### Development
+Start a local development server. Whenever you save a JavaScript file in the project, the `react-scipts` npm module re-compiles the code and reloads the browser page automatically. Use this while developing your project.  
 ```shell
+# Make sure you are in the project folder
+# cd /path/to/my-project
 npm start
 ```
+Starts a local development server which you can visit at `http://localhost:3000`  
 ### Production
+Create an optimized production build from the code. These can be copied to any web host (e.g. via FTP), and will be able to run in most browsers.
 ```shell
+# Make sure you are in the project folder
+# cd /path/to/my-project
 npm run build
-```
+```  
+Creates a `/build` folder in the project directory, containing the static assets (`index.html`, `style.css`, `index.js`, etc.), which you can copy to any web host.
+
 ---
 ### What is p5.js?
 p5.js is a JavaScript library which mimics the functionality of the [Processing](https://processing.org/) language. Most functions you know from Processing can also be used in p5.js. The difference with Processing is that instead of running a sketch as a standalone program on your computer, you can run sketches in a web page. A script written in Processing compiles to [Java](https://nl.wikipedia.org/wiki/Java_(programmeertaal) ([not to be confused with JavaScript](https://www.keycdn.com/support/difference-between-java-and-javascript/)). A script written in JavaScript with the p5.js library runs in a browser.
