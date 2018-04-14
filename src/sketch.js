@@ -10,16 +10,17 @@ export const mySketch = (p) => {
   // Calling p5.js functions, using the variable 'p'
   p.setup = () => {
     // Creating a canvas using the entire screen of the webpage
-    p.createCanvas(window.innerWidth, window.innerHeight)
+    p.createCanvas(maxSize, maxSize)
     p.strokeWeight(5)
     p.ellipseMode(p.CENTER)
+    p.background(255)
 
     console.log('p5.js setup function executed')
   }
 
   p.draw = () => {
     // Clear the frame
-    p.background(255, 10)
+    p.background(255, 50)
 
     // Draw an ellipse
     p.translate(p.width / 2, p.height / 2)
@@ -34,10 +35,5 @@ export const mySketch = (p) => {
     h = h + hspeed
     if (w < 0 || w > maxSize) wspeed *= -1
     if (h < 0 || h > maxSize) hspeed *= -1
-  }
-
-  p.windowResized = () => {
-    // Resizing the canvas when the window size has changed
-    p.resizeCanvas(window.innerWidth, window.innerHeight)
   }
 }
