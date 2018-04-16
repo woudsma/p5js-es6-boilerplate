@@ -1,5 +1,4 @@
 html, body {
-  font-weight: bolder;
   font-family: 'Helvetica';
   margin: 0;
   padding: 0;
@@ -8,23 +7,19 @@ html, body {
   overflow: hidden;
 }
 
-canvas {
+input {
+  z-index: 1;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  mix-blend-mode:darken;
-}
-
-h1 {
-  position: absolute;
+  margin: 0;
+  background: none;
+  outline: none;
+  border: none;
   color: white;
   font-size: 48px;
+  font-weight: bolder;
   text-align: center;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
   transform: translateX(-50%) translateY(-50%);
   mix-blend-mode: difference;
 }
