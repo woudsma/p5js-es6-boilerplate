@@ -1,21 +1,20 @@
-// Exporting a variable (in this case, a function)
+// Exporting a function called 'mySketch'
 export const mySketch = (p) => {
   let maxSize = 500
-  let w = 0
-  let h = maxSize
   let wspeed = 1.66
   let hspeed = 1.33
+  let w = 0
+  let h = maxSize
   let r = 0
 
   // Calling p5.js functions, using the variable 'p'
   p.setup = () => {
     // Creating a canvas using the entire screen of the webpage
-    p.createCanvas(maxSize, maxSize)
+    p.createCanvas(window.innerWidth, window.innerHeight)
     p.strokeWeight(5)
-    p.ellipseMode(p.CENTER)
     p.background(255)
 
-    console.log('p5.js setup function executed')
+    console.log('p5.js setup function executed!')
   }
 
   p.draw = () => {
@@ -35,5 +34,9 @@ export const mySketch = (p) => {
     h = h + hspeed
     if (w < 0 || w > maxSize) wspeed *= -1
     if (h < 0 || h > maxSize) hspeed *= -1
+  }
+
+  p.windowResized = () => {
+    p.resizeCanvas(window.innerWidth, window.innerHeight)
   }
 }
