@@ -5,7 +5,7 @@ This is a boilerplate (project template) aimed at beginners, containing the basi
 ## Installation
 ##### Requirements
 * Code editor like [Atom](https://atom.io) / [Sublime Text](https://www.sublimetext.com) / [VS Code](https://code.visualstudio.com)
-* [Node.js](https://nodejs.org/en/)  
+* Node.js + npm: [Node.js](https://nodejs.org/en/)  
 
 Open your terminal and navigate to the the desired local directory where you want to store your project - for example:
 ```shell
@@ -28,8 +28,10 @@ git clone https://github.com/woudsma/p5js-es6-boilerplate my-project
 cd my-project
 npm install
 ```
- What this does: clone (download) the project from the online repository to a folder named `my-project` in the current working directory. Change directory (`cd`) to the newly created directory and use `npm install` to install the project dependencies.
+ What this does: clone (download) the project from the online repository to a folder named `my-project` in the current working directory. Change directory (`cd`) to the newly created directory and use `npm install` to download and install the project dependencies.
 ### Development
+Open the project folder in your code editor by dragging the folder icon onto the editor icon (macOS). Preferably do not open and edit single files, keep an overview of the project directory!  
+
 Start a local development server. Whenever you save a JavaScript file in the project, the `react-scipts` npm module watches, re-compiles the code and reloads the browser page automatically. Use this while developing your project.  
 ```shell
 # Make sure you are in the project folder
@@ -37,8 +39,6 @@ Start a local development server. Whenever you save a JavaScript file in the pro
 npm start
 ```
 Starts a local development server which you can visit at `http://localhost:3000`  
-
-Open the project folder in your code editor by dragging the folder icon onto the editor icon (macOS). Preferably do not open and edit single files, keep an overview of the project directory!
 ### Production
 Create an optimized production build from the code. The compiled html/css/js can be copied to any web hosting provider (e.g. via FTP), and will be able to run in most browsers.
 ```shell
@@ -59,23 +59,23 @@ The problem today is that some browsers cannot understand some parts of ES6, whi
 ##### Give me a break
 As web developers we don't want to think about this at all, and just write code which runs in every browser without errors.
 
-That is why developing for the web using modern JavaScript today requires build/automation tools to take care of these issues. You can set up your own workflow, with tools like [Grunt](https://gruntjs.com/), [Gulp](https://gulpjs.com/), [Browserify](http://browserify.org/), [Webpack](https://webpack.js.org/), etc - which are all a pain to set up right.  
+That is why developing for the web using modern JavaScript today requires build/automation tools to take care of these issues. You can set up your own workflow, with tools like [Grunt](https://gruntjs.com/), [Gulp](https://gulpjs.com/), [Browserify](http://browserify.org/), [Webpack](https://webpack.js.org/), etc - which are all a pain to set up right. These build tools can bundle your code and modules into a single JavaScript file, and you can set them up to [minify](https://jscompress.com/)/[uglify](https://www.uglifyjs.net/) your code for example.  
 ##### Using a boilerplate
-A boilerplate takes care of spending a lot of time preparing your workflow, depending on what you want to do or which frameworks/libraries you want to use. Want to create an app with a JavaScript UI framework like [React](https://reactjs.org/)? Use [create-react-app](https://github.com/facebook/create-react-app). Want to use p5.js with ES6? Use this boilerplate for example!  
+A boilerplate takes care of spending a lot of time preparing your workflow, depending on what you want to do or which frameworks/libraries you want to use. Want to create an app with a JavaScript UI framework like [React](https://reactjs.org/)? Use [create-react-app](https://github.com/facebook/create-react-app). Want to use p5.js with ES6? Use this boilerplate!  
 ### What is npm?
 npm ([What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)) is a package manager for the JavaScript programming language. With npm, you can find and use open-source projects/libraries, like [p5.js](https://p5js.org/), [three.js](https://threejs.org/), [Preact](https://github.com/developit/preact), [D3.js](https://d3js.org/), and easily install smaller JavaScript modules like [hotkeys](https://github.com/jaywcjlove/hotkeys), [concaveman](https://github.com/mapbox/concaveman), [google-drive-spreadsheet](https://github.com/bgdavidx/google-drive-spreadsheet).  
 
-To use a module in this boilerplate, open a terminal window and make sure you are in the project directory. For example.
+To use a module in this boilerplate, open a terminal window and make sure you are in the project directory:
 ```shell
 cd /Users/woudsma/KABK/coding/my-p5js-sketch
 ```
-Download and install the module from npm, and optionally save it to your `package.json` file.
+Download and install the module from npm, and optionally save it to your `package.json` file:
 ```shell
-npm install concaveman
+npm install hotkeys-js --save
 # Or
-npm install concaveman --save
+npm i hotkeys-js -S
 ```
-The module (and the modules it depends on) gets downloaded and stored in the `node_modules` folder, inside the project directory. To save the module as a dependency of this project, use the `--save` (or `-S`) flag. This way `package.json` gets updated with the dependency. This is nice, because now you can store your source code in a repository without the entire `node_modules` folder. It is good practice not to keep `node_modules` inside your online repository (GitHub, Bitbucket/GitLab/..), because it usually contains a lot of files, this is unnecessary when we know which modules we have as project dependencies from the `package.json` file. The files/directories `git` needs to ignore when uploading to a online repository are mentioned in the `.gitignore` file. Try creating a repository for your project and uploading it to [Bitbucket](https://bitbucket.org/) (free private repositories) for example. When cloning/downloading a project from a repository, you only need to run `npm install` to download all the dependencies to the `node_modules` folder again and get up and running.  
+The module (and the modules it depends on) gets downloaded and stored in the `node_modules` folder, inside the project directory. To save the module as a dependency of this project, use the `--save` (or `-S`) flag. This way `package.json` gets updated with the dependency. This is nice, because now you can store your source code in a repository without the entire `node_modules` folder. It is good practice not to keep `node_modules` inside your online repository (GitHub, Bitbucket/GitLab/..), because it usually contains a lot of files, this is unnecessary when we know which modules we have as project dependencies from the `package.json` file. The files/directories `git` needs to ignore when uploading to a online repository are mentioned in the `.gitignore` file. Try creating a repository for your project and uploading it to [Bitbucket](https://bitbucket.org/) (free private repositories). After cloning/downloading a project from a repository, you only need to run `npm install` to download all the dependencies to the `node_modules` folder again and get up and running.  
 
 Example: using a npm module in a JavaScript file:
 ```js
@@ -85,7 +85,8 @@ import hotkeys from 'hotkeys-js'
 // Read the docs: http://wangchujiang.com/hotkeys/
 console.log(hotkeys)
 
-hotkeys('f5', () => {
+hotkeys('f5', (event) => {
+  event.preventDefault()
   alert('you pressed F5!')
 })
 ```
