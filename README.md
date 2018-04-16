@@ -1,7 +1,7 @@
 # p5.js + ES6 + npm boilerplate
 This is a boilerplate (project template) aimed at beginners, containing the basic files and tools for developing with [p5.js](https://p5js.org/) + [ES6](https://codeburst.io/es6-tutorial-for-beginners-5f3c4e7960be) + [npm](https://www.npmjs.com/).  
 
-[DEMO](https://p5js-demo.omnio.studio/)  
+##### [DEMO](https://p5js-demo.omnio.studio/)  
 ## Installation
 ##### Requirements
 * Code editor like [Atom](https://atom.io) / [Sublime Text](https://www.sublimetext.com) / [VS Code](https://code.visualstudio.com)
@@ -63,7 +63,7 @@ That is why developing for the web using modern JavaScript today requires build/
 ##### Using a boilerplate
 A boilerplate takes care of spending a lot of time preparing your workflow, depending on what you want to do or which frameworks/libraries you want to use. Want to create an app with a JavaScript UI framework like [React](https://reactjs.org/)? Use [create-react-app](https://github.com/facebook/create-react-app). Want to use p5.js with ES6? Use this boilerplate!  
 ### What is npm?
-npm ([What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)) is a package manager for the JavaScript programming language. With npm, you can find and use open-source projects/libraries, like [p5.js](https://p5js.org/), [three.js](https://threejs.org/), [Preact](https://github.com/developit/preact), [D3.js](https://d3js.org/), and easily install smaller JavaScript modules like [hotkeys](https://github.com/jaywcjlove/hotkeys), [concaveman](https://github.com/mapbox/concaveman), [google-drive-spreadsheet](https://github.com/bgdavidx/google-drive-spreadsheet).  
+npm ([What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)) is a package manager for the JavaScript programming language. With npm, you can find and use open-source projects/libraries, like [p5.js](https://p5js.org/), [three.js](https://threejs.org/), [Preact](https://github.com/developit/preact), [D3.js](https://d3js.org/), and easily install smaller JavaScript modules like [hotkeys](https://github.com/jaywcjlove/hotkeys), [concaveman](https://github.com/mapbox/concaveman), [google-drive-spreadsheet](https://github.com/bgdavidx/google-drive-spreadsheet), etc.  
 
 To use a module in this boilerplate, open a terminal window and make sure you are in the project directory:
 ```shell
