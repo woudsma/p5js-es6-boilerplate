@@ -1,9 +1,18 @@
 # p5.js + ES6 + npm boilerplate
 This is a boilerplate (project template) aimed at beginners, containing the basic files and tools for developing with [p5.js](https://p5js.org/) + [ES6](https://codeburst.io/es6-tutorial-for-beginners-5f3c4e7960be) + [npm](https://www.npmjs.com/).  
-
 #### [DEMO](https://p5js-demo.omnio.studio/)  
+Summary:  
++ [Installation](#Installation)
+  + [Requirements](#Requirements)
++ [Usage](#Usage)
+  + [Development](#Development)
+  + [Production](#Production)
++ [What is p5.js?](#What-is-p5.js?)
++ [What is ES6?](#What-is-ES6?)
++ [What is npm?](#What-is-npm?)
+---
 ## Installation
-##### Requirements
+#### Requirements
 * Code editor like [Atom](https://atom.io) / [Sublime Text](https://www.sublimetext.com) / [VS Code](https://code.visualstudio.com)
 * Node.js + npm: [Node.js](https://nodejs.org/en/)  
 
@@ -28,8 +37,9 @@ git clone https://github.com/woudsma/p5js-es6-boilerplate my-project
 cd my-project
 npm install
 ```
- What this does: clone (download) the project from the online repository to a folder named `my-project` in the current working directory. Change directory (`cd`) to the newly created directory and use `npm install` to download and install the project dependencies.
-### Development
+ What this does: clone (download) the project from the online repository to a folder named `my-project` in the current working directory. Change directory (`cd`) to the newly created directory and use `npm install` to download and install the project dependencies.  
+## Usage  
+#### Development  
 Open the project folder in your code editor by dragging the folder icon onto the editor icon (macOS). Preferably do not open and edit single files, keep an overview of the project directory!  
 
 Start a local development server. Whenever you save a JavaScript file in the project, the `react-scipts` npm module watches, re-compiles the code and reloads the browser page automatically. Use this while developing your project.  
@@ -39,7 +49,7 @@ Start a local development server. Whenever you save a JavaScript file in the pro
 npm start
 ```
 Starts a local development server which you can visit at `http://localhost:3000`  
-### Production
+#### Production
 Create an optimized production build from the code. The compiled html/css/js can be copied to any web hosting provider (e.g. via FTP), and will be able to run in most browsers.
 ```shell
 # Make sure you are in the project folder
@@ -49,9 +59,9 @@ npm run build
 Creates a `/build` folder in the project directory, containing the static assets (`index.html`, `style.css`, `index.js`, etc.), which you can copy to any web host.
 
 ---
-### What is p5.js?
+## What is p5.js?
 p5.js is a JavaScript library which mimics the functionality of the [Processing](https://processing.org/) language. Most functions you know from Processing can also be used in p5.js. The difference with Processing is that instead of running a sketch as a standalone program on your computer, you can run sketches in a web page. A script written in Processing compiles to [Java](https://nl.wikipedia.org/wiki/Java_(programmeertaal) ([not to be confused with JavaScript](https://www.keycdn.com/support/difference-between-java-and-javascript/)). A script written in JavaScript with the p5.js library runs in a browser.
-### What is ES6?
+## What is ES6?
 ES6 is the abbreviation of ECMAScript 6, later renamed to ECMAScript 2015 (ES2015). Fancy names, but it comes down to the modern version of JavaScript. Think of [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) as JavaScript. ES6 was released in 2015, but there have been updates in 2016 and 2017 as well (ES7, ES8, the latest version is referred to as ES.Next). You will find code examples / tutorials written in ES6, but a lot are also written in the 'older' version of JavaScript, which is referred to as ES5.  
 [The difference between ES5 and ES6](https://codeburst.io/es5-vs-es6-with-example-code-9901fa0136fc).  
 
@@ -62,7 +72,7 @@ As web developers we don't want to think about this at all, and just write code 
 That is why developing for the web using modern JavaScript today requires build/automation tools to take care of these issues. You can set up your own workflow, with tools like [Grunt](https://gruntjs.com/), [Gulp](https://gulpjs.com/), [Browserify](http://browserify.org/), [Webpack](https://webpack.js.org/), etc - which are all a pain to set up right. These build tools can bundle your code and modules into a single JavaScript file, and you can set them up to [minify](https://jscompress.com/)/[uglify](https://www.uglifyjs.net/) your code for example.  
 ##### Using a boilerplate
 A boilerplate takes care of spending a lot of time preparing your workflow, depending on what you want to do or which frameworks/libraries you want to use. Want to create an app with a JavaScript UI framework like [React](https://reactjs.org/)? Use [create-react-app](https://github.com/facebook/create-react-app). Want to use p5.js with ES6? Use this boilerplate!  
-### What is npm?
+## What is npm?
 npm ([What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)) is a package manager for the JavaScript programming language. With npm, you can find and use open-source projects/libraries, like [p5.js](https://p5js.org/), [three.js](https://threejs.org/), [Preact](https://github.com/developit/preact), [D3.js](https://d3js.org/), and easily install smaller JavaScript modules like [hotkeys](https://github.com/jaywcjlove/hotkeys), [concaveman](https://github.com/mapbox/concaveman), [google-drive-spreadsheet](https://github.com/bgdavidx/google-drive-spreadsheet), etc.  
 
 To use a module in this boilerplate, open a terminal window and make sure you are in the project directory:
