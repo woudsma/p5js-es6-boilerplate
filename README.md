@@ -1,5 +1,6 @@
 # p5.js + ES6 + npm boilerplate
-This is a boilerplate (project template) aimed at beginners, containing the basic files and tools for developing with [p5.js](https://p5js.org/) + [ES6](https://codeburst.io/es6-tutorial-for-beginners-5f3c4e7960be) + [npm](https://www.npmjs.com/).  
+This is a boilerplate (project template) aimed at beginners.  
+It containes the basic files and tools for developing with [p5.js](https://p5js.org/) + [ES6](https://codeburst.io/es6-tutorial-for-beginners-5f3c4e7960be) + [npm](https://www.npmjs.com/).  
 #### [DEMO](https://p5js-demo.omnio.studio/)  
 Summary:  
 + [Installation](#installation)
