@@ -7,9 +7,9 @@ Summary:
 + [Usage](#usage)
   + [Development](#development)
   + [Production](#production)
-+ [What is p5.js?](#what-is-p5.js?)
-+ [What is ES6?](#what-is-ES6?)
-+ [What is npm?](#what-is-npm?)
++ [What is p5.js?](#what-is-p5.js)
++ [What is ES6?](#what-is-ES6)
++ [What is npm?](#what-is-npm)
 ---
 ## Installation
 #### Requirements
