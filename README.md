@@ -76,11 +76,11 @@ A boilerplate takes care of spending a lot of time preparing your workflow, depe
 ## What is npm?
 npm ([What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)) is a package manager for the JavaScript programming language. With npm, you can find and use open-source projects/libraries, like [p5.js](https://p5js.org/), [three.js](https://threejs.org/), [Preact](https://github.com/developit/preact), [D3.js](https://d3js.org/), and easily install smaller JavaScript modules like [hotkeys](https://github.com/jaywcjlove/hotkeys), [concaveman](https://github.com/mapbox/concaveman), [google-drive-spreadsheet](https://github.com/bgdavidx/google-drive-spreadsheet), etc.  
 
-To use a module in this boilerplate, open a terminal window and make sure you are in the project directory:
+To use a module/library listed on [npmjs.com](https://www.npmjs.com/) in your project, open a terminal window and make sure you are in the project directory:
 ```shell
 cd /Users/woudsma/KABK/coding/my-p5js-sketch
 ```
-Download and install the module from npm, and optionally save it to your `package.json` file:
+Download and install the module from npm, and optionally save it to your `package.json` file as a project dependency:
 ```shell
 npm install hotkeys-js --save
 # Or
