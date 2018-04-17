@@ -89,7 +89,7 @@ npm i hotkeys-js -S
 ```
 The module (and the modules it depends on) gets downloaded and stored in the `node_modules` folder, inside the project directory. To save the module as a dependency of this project, use the `--save` (or `-S`) flag. This way `package.json` gets updated with the dependency. This is nice, because now you can store your source code in a repository without the entire `node_modules` folder. It is good practice not to keep `node_modules` inside your online repository (GitHub, Bitbucket/GitLab/..), because it usually contains a lot of files, this is unnecessary when we know which modules we have as project dependencies from the `package.json` file. The files/directories `git` needs to ignore when uploading to a online repository are mentioned in the `.gitignore` file. Try creating a repository for your project and uploading it to [Bitbucket](https://bitbucket.org/) (free private repositories). After cloning/downloading a project from a repository, you only need to run `npm install` to download all the dependencies to the `node_modules` folder again and get up and running.  
 
-Example: using a npm module in a JavaScript file:
+Example: use a npm module in a JavaScript file using ES6 syntax:
 ```js
 import hotkeys from 'hotkeys-js'
 
