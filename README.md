@@ -28,7 +28,7 @@ Show the current directory path: `pwd`
 List the files in the current directory: `ls`  
 Quick tutorial: [25 Terminal Command For Beginners](https://www.youtube.com/watch?v=oStNbXzv7mE)
 
-Clone (a) repository from GitHub/Bitbucket/GitLab/.. to the local directory, go into the directory and install the project dependencies (specified in `package.json`) using `npm` - for example:  
+Clone (a) repository from GitHub/Bitbucket/GitLab/.. to the local directory, go into the directory and install the project dependencies using the `npm` command-line tool - for example:  
 ```shell
 # git clone <repository> <project-name>
 # cd <project-name>
@@ -38,7 +38,7 @@ git clone https://github.com/woudsma/p5js-es6-boilerplate my-project
 cd my-project
 npm install
 ```
- What this does: clone (download) the project from the online repository to a folder named `my-project` in the current working directory. Change directory (`cd`) to the newly created directory and use `npm install` to download and install the project dependencies.  
+ What this does: clone (download) the project from the online repository to a folder named `my-project` in the current working directory. Change directory (`cd`) to the newly created directory `my-project`. When inside this directory, run `npm install` to download and install the project dependencies. This will download the project dependencies (specified in `package.json`) to a folder named `node_modules` inside the project directory.  
 ## Usage  
 #### Development  
 Open the project folder in your code editor by dragging the folder icon onto the editor icon (macOS). Preferably do not open and edit single files, keep an overview of the project directory!  
