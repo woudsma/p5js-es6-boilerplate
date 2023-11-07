@@ -20,9 +20,9 @@ Summary:
 
 ## Installation
 
-#### Requirements
+### Requirements
 
-- Code editor like [Atom](https://atom.io) / [Sublime Text](https://www.sublimetext.com) / [VS Code](https://code.visualstudio.com)
+- Code editor like [VS Code](https://code.visualstudio.com) / [Sublime Text](https://www.sublimetext.com)
 - Node.js + npm: [Node.js](https://nodejs.org/en/)
 
 Open your terminal and navigate to the the desired local directory where you want to store your project - for example:
@@ -34,11 +34,13 @@ cd ~/KABK/coding
 # ~/ is your home directory, in my case /Users/woudsma
 ```
 
+> Tips:  
 > Show the current directory path: `pwd`  
 > List the files in the current directory: `ls`  
 > Quick tutorial: [25 Terminal Commands For Beginners](https://www.youtube.com/watch?v=oStNbXzv7mE)
 
-Clone (a) repository from GitHub/Bitbucket/GitLab/.. to the local directory, go into the directory and install the project dependencies using the `npm` command-line tool - for example:
+Next, clone this repository from GitHub to a local directory, go into the directory and install the project dependencies using the `npm` command-line tool.  
+For example:
 
 ```shell
 # git clone <repository> <project-name>
@@ -54,7 +56,7 @@ What this does: clone (download) the project from the online repository to a fol
 
 ## Usage
 
-#### Development
+### Development
 
 Open the project folder in your code editor by dragging the folder icon onto the editor icon (macOS). Preferably do not open and edit single files, keep an overview of the project directory!
 
@@ -66,9 +68,9 @@ Start a local development server. Whenever you save a JavaScript file in the pro
 npm start
 ```
 
-Starts a local development server which you can visit at `http://localhost:3000`
+Starts a local development server which you can visit at `http://127.0.0.1:8000`
 
-#### Production
+### Production
 
 Create an optimized production build from the code. The compiled html/css/js can be copied to any web hosting provider (e.g. via FTP), and will be able to run in most browsers.
 
@@ -79,6 +81,15 @@ npm run build
 ```
 
 Creates a `/build` folder in the project directory, containing the static assets (`index.html`, `style.css`, `index.js`, etc.), which you can copy to any web host.
+
+> If you're familiar with [Docker](https://www.docker.com/products/docker-desktop/), you can use the included `Dockerfile` to create a new container for the project. It uses NGINX to serve the static files from the `build` folder. The server config file is `nginx.default.conf`. (I'm using [Dokku](https://dokku.com/) to deploy the application to my server).
+>
+> ```shell
+> cd /path/to/my-project
+> docker build -t p5js-demo .
+> docker run --rm -it -p 5000:5000 p5js-demo
+> # Server accessible on http://localhost:5000
+> ```
 
 ---
 
