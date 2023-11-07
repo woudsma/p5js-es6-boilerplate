@@ -24,7 +24,3 @@ input {
   transform: translateX(-50%) translateY(-50%);
   mix-blend-mode: difference;
 }
-
-canvas {
-  opacity: 0.5;
-}
