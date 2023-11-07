@@ -44,7 +44,7 @@ npm install
 #### Development  
 Open the project folder in your code editor by dragging the folder icon onto the editor icon (macOS). Preferably do not open and edit single files, keep an overview of the project directory!  
 
-Start a local development server. Whenever you save a JavaScript file in the project, the `react-scipts` npm module watches, re-compiles the code and reloads the browser page automatically. Use this while developing your project.  
+Start a local development server. Whenever you save a JavaScript file in the project, the `esbuild` npm module watches, re-compiles the code and reloads the browser page automatically. Use this while developing your project.  
 ```shell
 # Make sure you are in the project folder
 # cd /path/to/my-project

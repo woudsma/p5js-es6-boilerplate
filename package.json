@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "p5": "^0.6.0",
-    "react-scripts": "^2.0.0-next"
+    "esbuild": "^0.19.5",
+    "npm-run-all": "^4.1.5",
+    "p5": "^1.8.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "start": "npm-run-all build serve",
+    "build": "npm-run-all copy-static build:js",
+    "serve": "esbuild src/index.js --bundle --outdir=build --servedir=build --watch",
+    "build:js": "esbuild src/index.js --define:process.env.NODE_ENV=\\\"$NODE_ENV\\\" --bundle --outdir=build --minify --sourcemap --platform=browser",
+    "copy-static": "cp -R public/ build/"
   },
   "browserslist": {
     "development": [

@@ -1,5 +1,6 @@
-html, body {
-  font-family: 'Helvetica';
+html,
+body {
+  font-family: "Helvetica";
   margin: 0;
   padding: 0;
   width: 100%;
@@ -22,4 +23,8 @@ input {
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
   mix-blend-mode: difference;
+}
+
+canvas {
+  opacity: 0.5;
 }
