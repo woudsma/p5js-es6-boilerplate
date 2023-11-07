@@ -37,8 +37,7 @@ cd ~/KABK/coding
 > List the files in the current directory: `ls`  
 > Quick tutorial: [25 Terminal Commands For Beginners](https://www.youtube.com/watch?v=oStNbXzv7mE)
 
-Next, clone this repository from GitHub to a local directory, go into the directory and install the project dependencies using the `npm` command-line tool.  
-For example:
+Next, clone this repository from GitHub to a local directory, go into the directory and install the project dependencies using the `npm` command-line tool:
 
 ```shell
 # git clone <repository> <project-name>
@@ -70,7 +69,7 @@ Starts a local development server which you can visit at `http://127.0.0.1:8000`
 
 ### Production
 
-Create an optimized production build from the code. The compiled html/css/js can be copied to any web hosting provider (e.g. via FTP), and will be able to run in most browsers.
+Create an optimized production build from the code. The compiled HTML/CSS/JS can be copied to any web hosting provider (e.g. via FTP), and will be able to run in most browsers.
 
 ```shell
 # Make sure you are in the project folder
@@ -78,12 +77,12 @@ Create an optimized production build from the code. The compiled html/css/js can
 npm run build
 ```
 
-Creates a `/build` folder in the project directory, containing the static assets (`index.html`, `style.css`, `index.js`, etc.), which you can copy to any web host.
+Creates a `build` folder in the project directory, containing the static assets (`index.html`, `style.css`, `index.js`, etc.), which you can copy to any web host.
 
 > If you're familiar with [Docker](https://www.docker.com/products/docker-desktop/), you can use the included `Dockerfile` to create a new container for the project. It uses NGINX to serve the static files from the `build` folder. The server config file is `nginx.default.conf`. (I'm using [Dokku](https://dokku.com/) to deploy the application to my server).
 >
 > ```shell
-> cd /path/to/my-project
+> # cd /path/to/my-project
 > docker build -t p5js-demo .
 > docker run --rm -it -p 5000:5000 p5js-demo
 > # Server accessible on http://localhost:5000
