@@ -7,8 +7,8 @@ It containes the basic files and tools for developing a project with [ES6](https
 
 Summary:
 
-- [Installation](#installation)
-  - [Requirements](#requirements)
+- [Requirements](#requirements)
+  - [Installation](#installation)
 - [Usage](#usage)
   - [Development](#development)
   - [Production](#production)
