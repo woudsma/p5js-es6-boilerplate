@@ -34,9 +34,9 @@ cd ~/KABK/coding
 # ~/ is your home directory, in my case /Users/woudsma
 ```
 
-Show the current directory path: `pwd`  
-List the files in the current directory: `ls`  
-Quick tutorial: [25 Terminal Commands For Beginners](https://www.youtube.com/watch?v=oStNbXzv7mE)
+> Show the current directory path: `pwd`  
+> List the files in the current directory: `ls`  
+> Quick tutorial: [25 Terminal Commands For Beginners](https://www.youtube.com/watch?v=oStNbXzv7mE)
 
 Clone (a) repository from GitHub/Bitbucket/GitLab/.. to the local directory, go into the directory and install the project dependencies using the `npm` command-line tool - for example:
 
