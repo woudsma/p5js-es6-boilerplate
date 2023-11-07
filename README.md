@@ -67,6 +67,9 @@ npm start
 
 Starts a local development server which you can visit at `http://127.0.0.1:3000`
 
+> You can kill the development server process using the `Ctrl + c` key combination.  
+> If you make changes to a file in the `public` folder, such as `index.html`, you'll have to manually refresh the page or restart the development server to see the changes.
+
 ### Production
 
 Create an optimized production build from the code. The compiled HTML/CSS/JS can be copied to any web hosting provider (e.g. via FTP), and will be able to run in most browsers.
