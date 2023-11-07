@@ -16,14 +16,12 @@ Summary:
 - [What is ES6?](#what-is-es6)
 - [What is npm?](#what-is-npm)
 
----
-
-## Installation
-
-### Requirements
+## Requirements
 
 - Code editor like [VS Code](https://code.visualstudio.com) / [Sublime Text](https://www.sublimetext.com)
 - Node.js + npm: [Node.js](https://nodejs.org/en/)
+
+### Installation
 
 Open your terminal and navigate to the the desired local directory where you want to store your project - for example:
 
@@ -90,8 +88,6 @@ Creates a `/build` folder in the project directory, containing the static assets
 > docker run --rm -it -p 5000:5000 p5js-demo
 > # Server accessible on http://localhost:5000
 > ```
-
----
 
 ## What is p5.js?
 
